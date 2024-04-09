@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .product-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-details {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .product-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .product-details p {
+    margin-bottom: 10px;
+  }
+  .product-details label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .product-details input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .product-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .product-details button:hover {
+    background-color: #0056b3;
+  }
+  .specifications {
+    margin-top: 20px;
+  }
+  .reviews {
+    margin-top: 20px;
+  }
+  .product-details-container img {
+    width: 300px;
+    height: 300px;
+  }
+  .student-profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.student-image img {
+  width: 280px; /* Adjust the width to make it shorter */
+  height: 280px; /* Adjust the height proportionally */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px; /* Increase the margin to move it slightly to the left */
+}
+
+
+.student-details {
+    flex: 1;
+}
+
+.student-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.student-details p {
+    margin-bottom: 10px;
+}
+
+.student-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.student-details button:hover {
+    background-color: #0056b3;
+}

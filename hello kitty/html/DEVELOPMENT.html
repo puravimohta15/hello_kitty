@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEVELOPEMENT</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="../js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="/css/category.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+<div class="heading">
+    <h2><b>DEVELOPEMENT MENTORS</b></h2>
+</div>
+
+<div class="category">
+    <div class="products section container" id="products">
+        <div class="products__container grid">
+            <div class="products__card" onclick='window.open("./Rishika.html", "_blank")'>
+                <div class="available-sign"></div> <!-- Add this line -->
+
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+            
+                <h3 class="products__title">Rishika Gupta</h3>
+                <span class="products__price">2<sup>nd</sup> Year</span>
+            
+                <p class="products__description">UI/UX Designer	
+                <br>    Member - GeekHaven	
+                <br>    (Design Wing)	</p> <!-- Add your description here -->
+            
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+            
+
+            <div class="products__card" onclick='window.open("./contentDetails.html", "_blank")'>
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+
+                <h3 class="products__title">Saishree Kouda</h3>
+                <span class="products__price">3<sup>rd</sup> Year</span>
+
+                <p class="products__description">Frontend Developer		
+                <br>    UI/UX Designer		
+                <br>    GeekHaven - Coordinator		
+                <br>    Design Wing		</p> <!-- Add your description here -->
+
+
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="products__card" onclick='window.open("./Akshay.html", "_blank")'>
+                <div class="available-sign"></div> <!-- Add this line -->
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+
+                <h3 class="products__title">Akshay Waghmare</h3>
+                <span class="products__price">2<sup>nd</sup> Year</span>
+
+                <p class="products__description">
+                    Founder & CEO-Wemofy
+                    <br>Member -  GeekHaven 
+                    <br>(Web Development Wing)
+                    <br>Freelance Web Developer
+                   
+                </p> <!-- Add your description here -->
+
+
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="products__card" onclick='window.open("./contentDetails.html", "_blank")'>
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+
+                <h3 class="products__title">Anurag Jain</h3>
+                <span class="products__price">3<sup>rd</sup> Year</span>
+
+                <p class="products__description">Software Development Intern
+                    GobbleCube
+                    <br>Overall Coordinator and Member, Web Development Wing: GeekHaven
+                    <BR>Web Development Intern
+                        Korangle
+            
+                </p> <!-- Add your description here -->
+
+
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<br>
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<script src="../js/content.js"></script>
+
+</html>

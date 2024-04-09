@@ -1,0 +1,128 @@
+body
+{
+    margin: 0;
+}
+
+#container {
+    background-color: #81c3d7;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+#logo
+{
+    font-size: 40px; 
+    font-family: 'Lato', sans-serif;
+    margin-right: -30px;
+    margin-top: 5px;
+}
+#logo a
+{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+#logo > b
+{
+    font-weight: 900;
+    font: black;
+}
+
+#collection
+{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+}
+#collection div {
+    margin: 0 20px;
+}
+#collection div {
+    transition: transform 0.3s, color 0.3s; 
+}
+
+#collection div:hover {
+    transform: scale(1.1); 
+    color: #555;
+}
+
+
+#collection a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+#CP
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#DEVELOPMENT
+{
+    margin-right: 10px;
+}
+#ACADEMICS
+{
+    margin-right: 10px;
+}
+#collection a
+{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.search
+{
+    padding: 14px;
+    color: rgb(29, 29, 29);
+    min-width: 25px;
+    text-align: center;
+    position: absolute;
+}
+
+#user
+{
+    display: flex;
+    align-items: center;
+}
+
+#user a
+{
+    color: rgb(29, 29, 29)
+}
+.userIcon {
+    font-size: 30px; 
+}
+
+
+#input 
+{
+    width: 18em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+#input::placeholder
+{
+    font-weight: bold;
+}
+#input:focus
+{
+    outline: none;
+}
+#user a
+{
+    color: rgb(29, 29, 29)
+}
+
+ 
+  
