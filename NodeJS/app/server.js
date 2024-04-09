@@ -6,10 +6,11 @@ const { v4: uuidv4 } = require('uuid');
 const MongoClient = require('mongodb').MongoClient;
 const uri = 'mongodb://localhost:27017'; // Connection URI
 const client = new MongoClient(uri);
+// import router from './routers.js';
 
 async function connectToMongo() {
-  try {
-    await client.connect(); // Connect to MongoDB
+ try {
+     await client.connect(); // Connect to MongoDB
     console.log('Connected to MongoDB');
   } catch (error) {
     console.error('Error connecting to MongoDB:', error);
@@ -61,6 +62,7 @@ app.use(session({
        // res.send('Signup successful'); // Send response to the client
        res.render('login', { title: 'Login System' });
     });
+    
 
 // Home route
 app.get('/login', (req, res) => {
