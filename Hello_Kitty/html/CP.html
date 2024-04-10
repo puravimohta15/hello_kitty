@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CP</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="../js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="/Hello_Kitty/css/category.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+<div class="heading">
+    <h2><b>COMPETITIVE CODING MENTORS</b></h2>
+</div>
+
+<div class="category">
+    <div class="products section container" id="products">
+        <div class="products__container grid">
+            <div class="products__card">
+                <img src="../img/srijan.jpeg" alt="" class="products__img">
+            
+                <h3 class="products__title">Srijan Jain</h3>
+                <span class="products__price">2<sup>nd</sup> Year</span>
+            
+                <p class="products__description">Expert @Codeforces <br> 5⭐ Codechef	<br>Member - GeekHaven		
+                <br> <a href="https://in.linkedin.com/in/srijan-jain-718987192" style="color: black;"> @linkedin</a> </p> <!-- Add your description here -->
+            
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+            
+
+            <div class="products__card" onclick='window.open("./Ishaan.html", "_blank")'>
+                <div class="available-sign"></div> <!-- Add this line -->
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+                <h3 class="products__title">Ishaan Oberoi</h3>
+                <span class="products__price">3<sup>rd</sup> Year</span>
+                <p class="products__description">Asia West Finalist <br>Expert @codeforces <br>5⭐ at codechef <br>Guardian @Leetcode (2583)(AIR 30)
+                <br></p>
+                <button class="products__button">
+                    <a href="https://in.linkedin.com/in/srijan-jain-718987192" style="color: black;">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </a> 
+                </button>
+            </div>
+
+            <div class="products__card" onclick='window.open("./contentDetails.html", "_blank")'>
+                <img src="../img/priyanshu.jpeg" alt="" class="products__img">
+
+                <h3 class="products__title">Priyanshu Sobti	</h3>
+                <span class="products__price">3<sup>rd</sup> Year</span>
+
+                <p class="products__description">Expert @Codeforces		
+                <br>    4⭐ @CodeChef		
+                <br>    Knight @LeetCode		
+                <br>    President @NewGen IEDC		</p> <!-- Add your description here -->
+
+
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="products__card" onclick='window.open("./Agrim.html", "_blank")'>
+                <div class="available-sign"></div> <!-- Add this line -->
+
+                <img src="../img/profile.jpeg" alt="" class="products__img">
+
+                <h3 class="products__title">Agrim Nauriyal</h3>
+                <span class="products__price">2<sup>nd</sup> Year</span>
+
+                <p class="products__description">ICPC Regionalist	
+                 <br>   Expert on @CodeForces	
+                 <br>   5 ⭐ on @CodeChef	
+                 <br>   Guardian on @LeetCode	
+                 <br>   Member - GeekHaven	</p> <!-- Add your description here -->
+
+
+                <button class="products__button">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<br>
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<script src="../js/content.js"></script>
+
+</html>

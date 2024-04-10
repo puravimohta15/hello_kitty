@@ -41,7 +41,15 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }));
+app.use('/api', router); // Use the router for API routes
 
+app.get('/dashboard', (req, res) => {
+    if (req.session.user) {
+        res.render('dashboard', { user: req.session.user });
+    } else {
+        res.send('Unauthorized User');
+    }
+});
 
 // Get the database instance
 

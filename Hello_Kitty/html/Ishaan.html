@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> DETAILS </title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/contetDetails.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contetDetails.css">
+
+</head>
+
+<body>
+<div id="1"></div>
+<script>
+    load("header.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+    }
+</script>
+    
+<div class="student-profile-container">
+  <div class="student-image">
+      <img src="../img/profile.jpeg" alt="Student Image">
+  </div>
+  <div class="student-details">
+      <h2>Ishaan Oberoi</h2>
+      <p>Batch: 2025<br>
+      <br>Branch: Information Technolgy<br>
+      <br>Specialization: Competitive Coding<br>
+      <br>Asia West Finalist || Amritapuri Regionalist 2023 ||Expert @codeforces(max 1825)|| 5⭐ at codechef || GR 358@ Kickstart 22 || GR 924 @Meta HC 2023 || Guardian @Leetcode (2583)(AIR 30)
+      <br><br>CodePlus Coordinator || LeetCode Problem Adder || Coordinator of Competitive coding wing GeekHaven || CC Wing Member</p>
+      <button id="chat-now">Chat Now</button>
+  </div>
+</div>
+<br><br><br><br>
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+</body>
+</html>

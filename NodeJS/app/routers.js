@@ -14,6 +14,7 @@ router.post('/login', (req, res)=>{
         res.redirect('C:\Users\User\Desktop\login new\hello kitty\html\index.html');
         res.end("Login Successful...!");
     }else{
+        res.redirect('\login new\hello kitty\html\index.html');
         res.end("Invalid Username")
     }
 });
@@ -38,5 +39,19 @@ router.get('/logout', (req ,res)=>{
         }
     })
 })
+
+router.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+
+    // Check if user exists and credentials match
+    const user = await collection.findOne({ email, password });
+    if (user) {
+        req.session.user = email; // Store user in session
+        res.redirect('/dashboard'); // Redirect to dashboard on successful login
+    } else {
+        res.send('Invalid Credentials'); // Handle invalid credentials
+    }
+});
+
 
 module.exports = router;
