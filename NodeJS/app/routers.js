@@ -55,6 +55,28 @@ router.post('/login', async (req, res) => {
 router.get('/reset-password', (req, res) => {
     res.render('reset-password', { email: req.query.email });  // Simulate email being passed in the query
 });
+// Forgot password route to render form
+router.get('/forgot-password', (req, res) => {
+    res.render('forgot-password', { title: 'Forgot Password' });
+});
+
+// Handle forgot password submission
+router.post('/forgot-password', async (req, res) => {
+    const { email } = req.body;
+
+    // Check if the user exists in the database
+    const user = await collection.findOne({ email });
+    
+    if (user) {
+        // Simulate sending reset password link
+        console.log(`Password reset link sent to ${email}`);
+
+        // Render a page that informs the user
+        res.render('password-reset-link', { email });
+    } else {
+        res.render('forgot-password', { error: 'Email not found' });
+    }
+});
 
 // Handle reset password submission
 router.post('/reset-password', async (req, res) => {
